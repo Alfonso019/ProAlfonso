@@ -73,7 +73,7 @@ public class UsuarioController {
 		boolean res= servicioUsuario.agregar(user, clave, sesion);
 		if(res)
 		{
-			return "redirect:/ticket/listar";
+			return "redirect:/ticket/lista";
 		}
 		modelo.addAttribute("error", servicioUsuario.getMensaje());
 		return "usuario/agregar";
